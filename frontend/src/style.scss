@@ -1,0 +1,261 @@
+*{
+    background-color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+
+$blue : rgb(62, 223, 255);
+.app{
+    display: flex;
+    justify-content: center;
+
+    .link{
+        text-decoration: none;
+    }
+
+    .navbar{
+        .container{
+            padding: 1em 0em;
+            display: flex;
+            justify-content:space-around;
+
+
+            .logo{
+                img{
+                    width: 8em;
+                    margin-right: 50em;
+                }
+            }
+            .links{
+                display: flex;
+                align-items: center;
+                gap: 2em;
+
+                h6{
+                    font-size: 1em;
+                    font-weight: 300;
+                }
+
+                span{
+                    cursor: pointer;
+                }
+            }
+        }        
+    }
+    .footer{
+        margin-top: 10em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(170, 161, 161);
+        font-size: 0.8em;
+
+        button{
+            color: rgb(170, 161, 161);
+            font-size: 0.8em;
+            margin-left: 100%;
+            cursor: pointer;
+        }
+    }
+
+    .home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4em;
+        margin-right: 20em;
+
+        img{
+            display: flex;
+            margin-right: 20em;
+            height: 38vh;
+            width: 40.3vw;
+        }
+
+        span{
+            color: $blue;
+        }
+
+        button{
+            margin-top: 15em;
+            padding: 1.2em;
+            width: 8em;
+            border: 0.2em solid $blue;
+            border-radius: 0.8em;
+            cursor: pointer;
+            color: white;
+    
+                &:hover{
+                    background-color: $blue;
+                }
+        }
+    
+    }
+    .auth2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1em;
+        
+
+        .xt{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border: 0.2em solid $blue;
+            height: 50vh;
+            width: 40vw;
+            border-radius: 1em; 
+            margin-top: 9em;
+
+        }
+    
+        h1{
+            font-size: 1.2em;
+            color: $blue;
+            margin-bottom: 1.2em;
+            display: flex;
+            justify-content: center;
+        }
+
+    
+        form{
+            display: flex;
+            flex-direction: column;
+            padding: 4em;
+            border: 0.1em solid $blue;
+            border-radius: 1.5em;
+            width: 15em;
+            height: 20em;
+            gap: 1.2em;
+    
+            input{
+                padding: 1em;
+                border: none;
+                border: 0.1em solid gray;
+                border-radius: 0.8em;
+            }
+    
+            .form-btn{
+                padding: 1em;
+                border: 0.2em solid $blue;
+                border-radius: 0.8em;
+                cursor: pointer;
+                color: white;
+    
+                &:hover{
+                    background-color: $blue;
+                }
+            }
+            
+            p{
+                font-size: 0.9em;
+                color: red;
+                text-align: center;
+            }
+    
+            span{
+                font-size: small;
+                text-align: center;
+            }
+        }
+    }
+    .cont-404{
+        height: 54vh;
+        display: flex;
+        justify-content: center;
+
+        img{
+            height: 68vh;
+            width: 50vw;
+        }
+
+        .main-404 {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            h1 {
+                font-size: 5rem;
+            }
+
+            .msg-404 {
+                font-size: 1.5rem;
+                padding: 2px;
+                text-align: center;
+
+                
+            }
+
+            .form-btn{
+
+                button{
+                padding: 1em;
+                border: 0.2em solid $blue;
+                border-radius: 0.8em;
+                cursor: pointer;
+                color: white;
+    
+                &:hover{
+                    background-color: $blue;
+                }
+                }
+            }
+            
+        }
+    }
+
+    .about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        .about-main{
+            display: flex;
+            flex-direction: column;
+            border: 0.1em solid $blue;
+            border-radius: 2em;
+            justify-content: center;
+            width: 40vw;
+            height: 40vh;
+
+            i{
+                font-size: 2.8em;
+                margin-left: 5em;
+            }
+
+            button{
+                cursor: pointer;
+                font-size: large;
+                margin-top: 1.5em;
+                margin-bottom: 1em;
+            }
+        }
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            margin-bottom: 5em;
+        }
+        .mail{
+            margin-bottom: 2em;
+        }
+        .phone{
+            margin-bottom: 6em;
+        }
+
+        span{
+            .span{
+                color: $blue;
+            }
+        }
+    }
+}
